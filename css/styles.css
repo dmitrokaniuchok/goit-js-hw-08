@@ -1,0 +1,52 @@
+body {
+  background-color: #f5f5f5;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery {
+  width: 1128px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  width: 360px;
+  height: 200px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+.basicLightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 696px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(46, 47, 66, 0.8);
+}
+.basicLightbox__placeholder img {
+  margin-top: 28px;
+  width: 1112px;
+  height: 640px;
+}
